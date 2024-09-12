@@ -12,6 +12,7 @@ struct Meals: Decodable {
 }
 
 struct Meal: Identifiable, Decodable {
+    var id = UUID()
     let idMeal: String?
     let strInstructions: String?
     let strMeal: String?
@@ -58,8 +59,4 @@ struct Meal: Identifiable, Decodable {
     var strMeasure18: String? = ""
     var strMeasure19: String? = ""
     var strMeasure20: String? = ""
-    
-    var id: Int {
-        return Int(idMeal ?? "\(Int.random(in: 1...1000000))") ?? Int.random(in: 1...1000000)
-    }
 }

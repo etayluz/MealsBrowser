@@ -10,11 +10,11 @@ import SwiftUI
 @MainActor
 class MealsViewModel: ObservableObject {
     @Published var meals: [Meal] = []
-    private let MealService = MealsService()
+    private let mealService = MealsService()
     
     func loadMeals() async {
         do {
-            meals = try await MealService.fetchMeals()
+            meals = try await mealService.fetchMeals()
         } catch {
             print("Failed to fetch Meals: \(error)")
         }
