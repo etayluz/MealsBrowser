@@ -14,7 +14,8 @@ class MealViewModel: ObservableObject {
     
     func fetchMealDetails() async {
         do {
-            meal = try await MealService.fetchMealDetails(meal)
+          meal = try await MealService.fetchMealDetails(meal)
+//            meall = try await NetworkManager.shared.get(urlString: "https://themealdb.com/api/json/v1/1/filter.php?c=Dessert")
         } catch {
             print("Failed to fetch Meals: \(error)")
         }
