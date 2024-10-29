@@ -48,3 +48,15 @@ class MealsService {
         return meal
     }
 }
+
+class MockMealsService: MealsService {
+    var mockMeal: Meal?
+    var shouldThrowError = false
+
+    override func fetchMealDetails(_ meal: Meal) async throws -> Meal {
+        if shouldThrowError {
+            throw URLError(.badServerResponse)
+        }
+        return mockMeal ?? meal // Return the mock meal or the passed meal if not set.
+    }
+}

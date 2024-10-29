@@ -35,23 +35,6 @@ struct MealDetailView: View {
                     Text(viewModel.meal.strIngredient1 ?? "")
                     Text(viewModel.meal.strIngredient2 ?? "")
                     Text(viewModel.meal.strIngredient3 ?? "")
-                    Text(viewModel.meal.strIngredient4 ?? "")
-                    Text(viewModel.meal.strIngredient5 ?? "")
-                    Text(viewModel.meal.strIngredient6 ?? "")
-                    Text(viewModel.meal.strIngredient7 ?? "")
-                    Text(viewModel.meal.strIngredient8 ?? "")
-                    Text(viewModel.meal.strIngredient9 ?? "")
-                    Text(viewModel.meal.strIngredient10 ?? "")
-                    Text(viewModel.meal.strIngredient11 ?? "")
-                    Text(viewModel.meal.strIngredient12 ?? "")
-                    Text(viewModel.meal.strIngredient13 ?? "")
-                    Text(viewModel.meal.strIngredient14 ?? "")
-                    Text(viewModel.meal.strIngredient15 ?? "")
-                    Text(viewModel.meal.strIngredient16 ?? "")
-                    Text(viewModel.meal.strIngredient17 ?? "")
-                    Text(viewModel.meal.strIngredient18 ?? "")
-                    Text(viewModel.meal.strIngredient19 ?? "")
-                    Text(viewModel.meal.strIngredient20 ?? "")
                 }
                 Spacer()
                 VStack(alignment: .leading) {
@@ -61,23 +44,6 @@ struct MealDetailView: View {
                     Text(viewModel.meal.strMeasure1 ?? "")
                     Text(viewModel.meal.strMeasure2 ?? "")
                     Text(viewModel.meal.strMeasure3 ?? "")
-                    Text(viewModel.meal.strMeasure4 ?? "")
-                    Text(viewModel.meal.strMeasure5 ?? "")
-                    Text(viewModel.meal.strMeasure6 ?? "")
-                    Text(viewModel.meal.strMeasure7 ?? "")
-                    Text(viewModel.meal.strMeasure8 ?? "")
-                    Text(viewModel.meal.strMeasure9 ?? "")
-                    Text(viewModel.meal.strMeasure10 ?? "")
-                    Text(viewModel.meal.strMeasure11 ?? "")
-                    Text(viewModel.meal.strMeasure12 ?? "")
-                    Text(viewModel.meal.strMeasure13 ?? "")
-                    Text(viewModel.meal.strMeasure14 ?? "")
-                    Text(viewModel.meal.strMeasure15 ?? "")
-                    Text(viewModel.meal.strMeasure16 ?? "")
-                    Text(viewModel.meal.strMeasure17 ?? "")
-                    Text(viewModel.meal.strMeasure18 ?? "")
-                    Text(viewModel.meal.strMeasure19 ?? "")
-                    Text(viewModel.meal.strMeasure20 ?? "")
                 }
             }
             .padding(.horizontal)
@@ -102,13 +68,8 @@ struct MealDetailView: View {
                     strIngredient1: "",
                     strIngredient2: "",
                     strIngredient3: "",
-                    strIngredient4: "",
-                    strIngredient5: "",
                     strMeasure1: "",
                     strMeasure2: "",
-                    strMeasure3: "",
-                    strMeasure4: "",
-                    strMeasure5: "",
-                    strMeasure6: "")
+                    strMeasure3: "")
     return MealDetailView(viewModel: MealViewModel(meal: meal))
 }
