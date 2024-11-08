@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B40671932C92B346006A5B92 /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40671922C92B346006A5B92 /* MealViewModel.swift */; };
+		B415DFD22CDDFED800E0C970 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B415DFD12CDDFED600E0C970 /* MapView.swift */; };
 		B453A4FE2C9F52D200740506 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453A4FD2C9F52C900740506 /* NetworkManager.swift */; };
 		B4C019FA2C929E99006959B6 /* MealsBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C019F92C929E99006959B6 /* MealsBrowserApp.swift */; };
 		B4C019FE2C929E9A006959B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C019FD2C929E9A006959B6 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		B40671922C92B346006A5B92 /* MealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModel.swift; sourceTree = "<group>"; };
+		B415DFD12CDDFED600E0C970 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		B453A4FD2C9F52C900740506 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B4C019F62C929E99006959B6 /* MealsBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealsBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C019F92C929E99006959B6 /* MealsBrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsBrowserApp.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		B4C9ABCB2C92ACFC004D7967 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B415DFD12CDDFED600E0C970 /* MapView.swift */,
 				B4C9ABC92C92ACCE004D7967 /* MealDetailView.swift */,
 				B4C01A092C929EC9006959B6 /* MealsView.swift */,
 			);
@@ -253,6 +256,7 @@
 				B453A4FE2C9F52D200740506 /* NetworkManager.swift in Sources */,
 				B4C01A082C929EB8006959B6 /* MealsViewModel.swift in Sources */,
 				B4C9ABCA2C92ACCE004D7967 /* MealDetailView.swift in Sources */,
+				B415DFD22CDDFED800E0C970 /* MapView.swift in Sources */,
 				B4C9ABD02C92ADE2004D7967 /* MealsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

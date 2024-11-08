@@ -6,11 +6,16 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct MealsView: View {
     @StateObject private var viewModel = MealsViewModel()
-    
+    @State private var region = MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194), // Example coordinates for San Francisco
+            span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        )
     var body: some View {
+        MapView()
         NavigationStack {
             List(viewModel.meals) { meal in
                 NavigationLink(destination: MealDetailView(viewModel: MealViewModel(meal: meal))) {
