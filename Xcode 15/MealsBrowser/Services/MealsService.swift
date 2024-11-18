@@ -19,6 +19,10 @@ class MealsService {
             throw URLError(.badURL)
         }
         
+//        var urlRequest = URLRequest(url: URL(string: Endpoint.meals.rawValue)!)
+//        urlRequest.allHTTPHeaderFields = ["x-api-key": "...", "x-channel-id": "ios"]
+//        let (data, response) = try await URLSession.shared.data(for: urlRequest)
+        
         let (data, response) = try await URLSession.shared.data(from: url)
         
         guard (response as? HTTPURLResponse)?.statusCode == 200 else {

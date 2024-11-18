@@ -2,7 +2,7 @@
 //  MealsBrowserTests.swift
 //  MealsBrowserTests
 //
-//  Created by Etay Luz on 10/29/24.
+//  Created by Etay Luz on 11/17/24.
 //
 
 import XCTest
@@ -35,7 +35,7 @@ final class MealsBrowserTests: XCTestCase {
     
     func testFetchMealDetails_Success() async throws {
             // Arrange: Set up the mock meal and the ViewModel.
-        let mockMeal = Meal(idMeal: "1", strInstructions: "Cook", strMeal: "1", strMealThumb: "1")
+        let mockMeal = Meal(id: "1", strInstructions: "Cook", strMeal: "1", strMealThumb: "1")
         let mockService = MockMealsService()
         mockService.mockMeal = mockMeal
         

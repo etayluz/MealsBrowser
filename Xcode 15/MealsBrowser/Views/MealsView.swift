@@ -17,6 +17,9 @@ struct MealsView: View {
     var body: some View {
 //        MapView()
         NavigationStack {
+//            ScrollView {
+//                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())]) {
+//                    ForEach(viewModel.meals) { meal in
             List(viewModel.meals) { meal in
                 NavigationLink(destination: MealDetailView(viewModel: MealViewModel(meal: meal))) {
                     HStack {
