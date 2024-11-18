@@ -35,7 +35,7 @@ final class MealsBrowserTests: XCTestCase {
     
     func testFetchMealDetails_Success() async throws {
             // Arrange: Set up the mock meal and the ViewModel.
-        let mockMeal = Meal(id: "1", strInstructions: "Cook", strMeal: "1", strMealThumb: "1")
+        let mockMeal = Meal(id: "1", strInstructions: "Cook", strMeal: "1", strMealThumb: "1", strIngredient1: "1", strIngredient2: "1", strIngredient3: "1", strMeasure1: "1", strMeasure2: "1", strMeasure3: "1")
         let mockService = MockMealsService()
         mockService.mockMeal = mockMeal
         
