@@ -15,7 +15,20 @@ class MealsService {
     }
 
     func fetchMeals() async throws -> [Meal] {
-        guard let url = URL(string: Endpoint.meals.rawValue) else {
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = "themealdb.com"
+        components.path = "/api/json/v1/1/filter.php"
+        components.queryItems = [
+            URLQueryItem(name: "c", value: "Dessert"),
+            //                URLQueryItem(name: "sort", value: sorting.rawValue)
+        ]
+        
+        // Getting a URL from our components is as simple as
+        // accessing the 'url' property.
+        print(components.url)
+        guard let url = components.url else {
+//        guard let url = URL(string: Endpoint.meals.rawValue) else {
             throw URLError(.badURL)
         }
         

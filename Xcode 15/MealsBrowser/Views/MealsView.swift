@@ -48,6 +48,24 @@ struct MealsView: View {
         }
     }
 }
+//List {
+//    Section(header: Text("RESULTS")) {
+//        ForEach(viewModel.results.Results) { result in
+//            VStack(alignment: .leading) {
+//                Text(result.Text ?? "").font(.body)
+//                Text(result.FirstURL ?? "").font(.subheadline)
+//            }
+//        }
+//    }
+//    Section(header: Text("RELATED TOPICS")) {
+//        ForEach(viewModel.results.RelatedTopics) { relatedTopic in
+//            VStack(alignment: .leading) {
+//                Text(relatedTopic.Text ?? "").font(.body)
+//                Text(relatedTopic.FirstURL ?? "").font(.subheadline)
+//            }
+//        }
+//    }
+//}
 
 
 #Preview {

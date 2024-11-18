@@ -13,6 +13,7 @@ struct Meals: Decodable {
 
 struct Meal: Identifiable, Decodable {
     let id: String?
+    //var id = NSUUID().uuidString - use this if there is NO id anywhere
     let strInstructions: String?
     let strMeal: String?
     let strMealThumb: String?
