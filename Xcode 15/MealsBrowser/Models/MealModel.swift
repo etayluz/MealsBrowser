@@ -17,13 +17,13 @@ struct Meal: Identifiable, Decodable {
     let strMeal: String?
     let strMealThumb: String?
     
-    var strIngredient1: String? = ""
-    var strIngredient2: String? = ""
-    var strIngredient3: String? = ""
+    let strIngredient1: String?
+    let strIngredient2: String?
+    let strIngredient3: String?
     
-    var strMeasure1: String? = ""
-    var strMeasure2: String? = ""
-    var strMeasure3: String? = ""
+    let strMeasure1: String?
+    let strMeasure2: String?
+    let strMeasure3: String?
     
     // Map "titleId" from JSON to "id" in the model
     private enum CodingKeys: String, CodingKey {

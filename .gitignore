@@ -1,0 +1,54 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# iOS/macOS Build
+build/
+DerivedData/
+*.xcworkspace
+!Pods/ # If using CocoaPods, keep the Pods directory if checked into version control
+
+# Xcode specific
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/xcshareddata/xcdebugger/
+*.xcuserstate
+*.xcuserdatad
+
+# Swift Package Manager
+/.build/
+/.swiftpm/xcode
+Package.resolved
+# Xcode automatically generates this folder, but commit `Package.resolved` for dependency locking
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+*.lock
+
+# Code Signing
+*.pem
+*.cer
+*.mobileprovision
+*.ipa
+
+# Archives
+*.xcarchive
+
+# Unit Test Results
+*.xcresult
+
+# IDE Preferences
+*.mode1v3
+*.mode2v3
+*.perspectivev3
